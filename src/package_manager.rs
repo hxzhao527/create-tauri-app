@@ -100,6 +100,7 @@ impl PackageManager {
                 Template::Solid,
                 Template::Angular,
                 Template::Preact,
+                Template::Lit,
             ],
             PackageManager::Dotnet => &[Template::Blazor],
         }
@@ -132,6 +133,8 @@ impl PackageManager {
                 Template::Angular,
                 Template::Preact,
                 Template::PreactTs,
+                Template::Lit,
+                Template::LitTs,
             ],
             PackageManager::Dotnet => &[Template::Blazor],
         }

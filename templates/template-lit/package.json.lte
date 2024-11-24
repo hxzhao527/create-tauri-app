@@ -1,0 +1,21 @@
+{
+  "name": "{% package_name %}",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "lit": "^3.2.1",
+    "@tauri-apps/api": "{% if v2 %}^2{% else %}^1{% endif %}"{% if v2 %},
+    "@tauri-apps/plugin-shell": "^2"{% endif %}
+  },
+  "devDependencies": {
+    "vite": "^5.3.1",
+    "@tauri-apps/cli": "{% if v2 %}^2{% else %}^1{% endif %}"
+  }
+}
